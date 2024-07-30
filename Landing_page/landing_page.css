@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #34495e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left .nav-link {
+  margin: 0 35px;
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: color 0.3s;
+}
+
+.nav-left .nav-link:hover {
+  color: #f39c12;
+}
+
+.nav-right .brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #34495e;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+  z-index: 999;
+}
+
+.side-panel-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.side-panel-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.side-panel-content a {
+  padding: 15px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.side-panel-content a:hover {
+  background-color: #2980b9;
+}
+
+.hero-section, .about-section, .features-section, .contact-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #2980b9, #8e44ad);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #2c3e50;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+  transform: scale(1.1);
+}
+
+.genres-section {
+  background-color: #34495e;
+  padding: 50px 20px;
+}
+
+.genres-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.genre-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.genre-box {
+  flex: 1 1 calc(20% - 20px);
+  height: 200px;
+  border-radius: 15px;
+  background-size:cover;
+  background-position:top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ecf0f1;
+  text-shadow: 2px 2px 4px #000;
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+.genre-box:hover {
+  transform: scale(1.05);
+}
+
+.about-section {
+  background-color: #2c3e50;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 20px;
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #34495e;
+  padding: 20px 0;
+}
+
+.feature-box {
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+  background-color: #2980b9;
+}
+
+.feature-box i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #f39c12;
+}
+
+.feature-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-section {
+  background-color: #2c3e50;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 20px;
+}
+
+.contact-section a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d1891d;
+  color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 20px;
+  height: 60px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.music-player-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.play-pause {
+  background-color: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.track-name {
+  font-size: 16px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.artist-name {
+  font-size: 14px;
+}
+
+.track-time {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.current-time, .total-time {
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

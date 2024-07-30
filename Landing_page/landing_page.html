@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="landing_page.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-right">
+            <span class="brand-name">VIBE</span>
+        </div>
+    </div>
+
+    <button class="side-panel-toggle" onclick="toggleSidePanel()">☰</button>
+    <div class="side-panel" id="side-panel">
+        <div class="side-panel-content">
+            <a href="#account">Account</a>
+            <a href="#playlists">Playlists</a>
+            <a href="#settings">Settings</a>
+            <a href="#liked-songs">Liked Songs</a>
+        </div>
+    </div>
+
+    <div id="home" class="hero-section">
+        <h1 class="hero-title">Experience the Best Music</h1>
+        <p class="hero-description">Listen to your favorite songs, discover new artists, and create your own playlists.</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+
+    <div class="genres-section">
+        <h2>Genres</h2>
+        <div class="genre-row">
+            <div class="genre-box" style="background-image: url('3.jpeg');">Hip-Hop</div>
+            <div class="genre-box" style="background-image: url('2.jpeg');">Pop</div>
+            <div class="genre-box" style="background-image: url('7.jpg');">Hindi</div>
+            <div class="genre-box" style="background-image: url('4.jpeg');">Jazz</div>
+            <div class="genre-box" style="background-image: url('10.jpeg');">Electronic</div>
+            <div class="genre-box" style="background-image: url('6.jpeg');">Kpop</div>
+            <div class="genre-box" style="background-image: url('9.png');">Blues</div>
+            <div class="genre-box" style="background-image: url('5.jpg');">Telugu</div>           
+            <div class="genre-box" style="background-image: url('1.jpg');">Rock</div>
+            <div class="genre-box" style="background-image: url('8.jpg');">Folk</div>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We are passionate about bringing the best music experience to our users. Our app offers a wide variety of features that cater to all your musical needs.</p>
+        <p>Let's VIBE together!!!</p>
+    </div>
+
+    <div id="features" class="features-section">
+        <div class="feature-box">
+            <i class="icon icon-playlist"></i>
+            <h3>Custom Playlists</h3>
+            <p>Create and share your own playlists with ease.</p>
+        </div>
+        <div class="feature-box">
+            <i class="icon icon-discover"></i>
+            <h3>Discover New Music</h3>
+            <p>Explore new genres and artists tailored to your taste.</p>
+        </div>
+        <div class="feature-box">
+            <i class="icon icon-stream"></i>
+            <h3>Stream Anywhere</h3>
+            <p>Enjoy music on any device, anytime, anywhere.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us anytime at <a href="mailto:support@vibe.com">support@vibe.com</a>.</p>
+    </div>
+
+    <div class="music-player">
+        <button class="play-pause">▶</button>
+        <div class="track-info">
+            <span class="track-name">Song Name</span>
+            <span class="artist-name">Artist Name</span>
+        </div>
+        <div class="track-time">
+            <span class="current-time">0:00 /</span>
+            <span class="total-time">3:45</span>
+        </div>
+    </div>
+
+    <script src="landing_page.js"></script>
+</body>
+</html>
